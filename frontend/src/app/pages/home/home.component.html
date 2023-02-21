@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-3">
+        Temperature and Humidity
+    </h1>
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Temperature</th>
+                <th scope="col">Humidity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of data">
+                <th scope="row">{{item.ID}}</th>
+                <td>{{item.temperature}} ℃</td>
+                <td>{{item.humidity}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
